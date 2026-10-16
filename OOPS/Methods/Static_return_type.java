@@ -5,10 +5,7 @@ class Addition{
     }
 }
 
-
-
 public class Static_return_type {
-
 
     public static void main(String[] args) {
 
