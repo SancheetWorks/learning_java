@@ -7,7 +7,7 @@ class Calculator {
             sum += n;
         }
 
-        System.out.println(sum);
+        return (sum);
     }
 }
 
