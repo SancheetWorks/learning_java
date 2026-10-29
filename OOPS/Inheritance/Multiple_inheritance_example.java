@@ -1,13 +1,11 @@
 interface AccountOperation{
 
     void deposit(double amount);
-
 }
 
 interface LoanOperation{
 
     void ApplyLoan(double amount);
-    
 }
 
 class SmartAccount implements AccountOperation, LoanOperation{
@@ -15,8 +13,9 @@ class SmartAccount implements AccountOperation, LoanOperation{
     String accountHolderName;
     double balance;
 
-    SmartAccount(String accountHolderName){
+    SmartAccount(String accountHolderName, double balance){
         this.accountHolderName = accountHolderName;
+        this.balance = balance;
     }
     
     @Override 
@@ -35,7 +34,7 @@ class SmartAccount implements AccountOperation, LoanOperation{
 
 public class Multiple_inheritance_example {
     public static void main(String[] args) {
-        SmartAccount obj = new SmartAccount("Sancheet");
+        SmartAccount obj = new SmartAccount("Sancheet", 14000);
         obj.deposit(1000);
         obj.ApplyLoan(1500);
         
