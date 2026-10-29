@@ -5,6 +5,7 @@ public class String_example {
         String name = "Sancheet";
         String name1 = "      Sancheet";
         String s = "Hello everyone I am a student";
+        
         System.out.println(name.length());
         System.out.println(name.toUpperCase());
         System.out.println(name.toLowerCase());
